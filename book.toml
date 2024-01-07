@@ -1,0 +1,12 @@
+[book]
+authors = ["暮月"]
+language = "zh"
+multilingual = false
+src = "src"
+title = "泛函分析基础：学习指导和习题详解"
+
+[output.html]
+fold = { enable = true }
+
+[preprocessor.katex]
+after = ["links"]
