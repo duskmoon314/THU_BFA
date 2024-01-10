@@ -19,6 +19,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Cache rust tools
+        uses: Swatinem/rust-cache@v2
+
       - name: Install mdBook
         run: cargo install mdbook
 
