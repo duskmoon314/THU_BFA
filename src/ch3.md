@@ -58,7 +58,7 @@
 
 ## 标准正交集与标准正交基
 
-**标准正交集** $M \subset X$ 为标准正交集，若 $M$ 线性无关且 $\forall x, y \in M, \langle x, y \rangle = 0$
+**标准正交集** $M \subset X$ 为标准正交集，若 $M$ 线性无关且 $\forall x, y \in M, \langle x, y \rangle = 0, \|x\| = \|y\| = 1$
 
 **标准正交序列** 若标准正交集为可数集，则称之为标准正交序列
 
@@ -79,18 +79,18 @@
 
 ## Hilbert 空间上有界线性泛函的表示
 
-若 $H$ 为 Hilbert 空间，则任取 $f \in H'$，$\exist! y \in H, \forall x \in H, f(x) = \langle x, y \rangle$
+**Riesz 表示定理** 若 $H$ 为 Hilbert 空间，则任取 $f \in H'$，$\exist! y \in H, \forall x \in H, f(x) = \langle x, y \rangle$
 
 **共轭双线性泛函** $h: X \times Y \to \mathbb{K}$，若
 
-1. $\forall x, y, z \in X, h(x + y, z) = h(x, z) + h(y, z)$
-2. $\forall x, y \in X, \forall \alpha \in \mathbb{K}, h(\alpha x, y) = \alpha h(x, y)$
-3. $\forall x, y, z \in X, h(x, y + z) = h(x, y) + h(x, z)$
-4. $\forall x, y \in X, \forall \alpha \in \mathbb{K}, h(x, \alpha y) = \overline{\alpha} h(x, y)$
+1. $h(x_1 + x_2, y) = h(x_1, y) + h(x_2, y)$
+2. $\forall \alpha \in \mathbb{K}, h(\alpha x, y) = \alpha h(x, y)$
+3. $h(x, y_1 + y_2) = h(x, y_1) + h(x, y_2)$
+4. $\forall \alpha \in \mathbb{K}, h(x, \alpha y) = \overline{\alpha} h(x, y)$
 
 **共轭双线性泛函的范数** $\|h\| = \sup\limits_{x \ne 0, y \ne 0} \frac{|h(x, y)|}{\|x\| \|y\|}$
 
-**Riesz 表示定理** 设 $H_1, H_2$ 为 Hilbert 空间，$h : H_1 \times H_2 \to \mathbb{K}$ 为有界共轭双线性泛函，则存在唯一的 $T \in B(H_1, H_2)$，使得 $\forall x \in H_1, y \in H_2, h(x, y) = \langle T(x), y \rangle$，此时 $\|T\| = \|h\|$
+**Riesz 定理** 设 $H_1, H_2$ 为 Hilbert 空间，$h : H_1 \times H_2 \to \mathbb{K}$ 为有界共轭双线性泛函，则存在唯一的 $T \in B(H_1, H_2)$，使得 $\forall x \in H_1, y \in H_2, h(x, y) = \langle T(x), y \rangle$，此时 $\|T\| = \|h\|$
 
 **伴随算子** $T^*: H_2 \to H_1$，$y \mapsto x$，$\forall x \in H_1, y \in H_2, \langle T(x), y \rangle = \langle x, T^*(y) \rangle$
 
