@@ -10,11 +10,19 @@
 
 ## 构建
 
-本项目使用 `mdBook` 构建，并依赖 `mdbook-katex` 渲染数学公式，因此需要先安装 `mdBook` 和 `mdbook-katex`，然后执行以下命令构建：
+本项目使用 [`mdBook`](https://github.com/rust-lang/mdBook) 构建，并依赖 [`mdbook-katex`](https://github.com/lzanini/mdbook-katex) 渲染数学公式，因此需要先安装 `mdBook` 和 `mdbook-katex`，然后执行以下命令构建：
 
 ```bash
 mdbook build
 ```
+
+## 贡献
+
+欢迎任何形式的贡献，包括但不限于：
+
+- 发现错误并提出 issue 或在 discussions 中讨论
+- 增补内容并提交 pull request
+- 为习题提供解答
 
 ## 版权
 
