@@ -16,10 +16,6 @@ $N(f)$ 为 $X$ 的闭线性子空间，故 $N(f) = \overline{N(f)}$。
 
 若 $N(f) = X$，则 $f = 0 \in X'$。
 
-<!-- 若 $N(f) \subsetneq X$，则 $\exists x_0 \in X \setminus N(f), f(x_0) = c \ne 0$。考虑 $M = \{ k x_0 + y: k \in \mathbb{K}, y \in N(f) \}$，由 $N(f)$ 为线性子空间，且 $x_0 \notin N(f)$，故 $M$ 为 $X$ 的线性子空间，且 $\forall z \in M$，有唯一的 $k, y$ 使得 $z = k x_0 + y$。
-
-取 $f -->
-
 若 $N(f) \subsetneq X$，则 $N(f)$ 不稠密，故 $\exists x_0 \in X \setminus N(f), r > 0, B(x_0, r) \subset X \setminus N(f)$。
 
 假设 $f \in X^* \setminus X'$，则 $f(B(x_0), r)$ 不是有界集，进而 $f(x_0) + rB(0, 1)$ 不是有界集。
